@@ -5,7 +5,7 @@
   package = "netlify-plugin-bundle-env"
   [plugins.inputs]
     directories = [
-      "dist"
+      "."
     ]
     exclude = [
       "node_modules/**"
@@ -22,3 +22,4 @@
 
 [build]
   command = "mkdir -p src/data && npm run build"
+  publish = "dist"
