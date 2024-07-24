@@ -3,6 +3,14 @@
 
 [[plugins]]
   package = "netlify-plugin-bundle-env"
+  [plugins.inputs]
+    directories = [
+      "dist/server",
+      "dist/client"
+    ]
+    exclude = [
+      "node_modules/**"
+    ]
 
 [[plugins]]
   package = "netlify-plugin-fetch-feeds"
