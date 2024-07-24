@@ -5,8 +5,7 @@
   package = "netlify-plugin-bundle-env"
   [plugins.inputs]
     directories = [
-      "dist/server",
-      "dist/client"
+      "dist"
     ]
     exclude = [
       "node_modules/**"
