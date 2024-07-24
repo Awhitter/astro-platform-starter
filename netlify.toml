@@ -1,3 +1,6 @@
+[images]
+  remote_images = ["https://res.cloudinary.com/dq9xmts6p/.*"]
+
 [[plugins]]
   package = "netlify-plugin-fetch-feeds"
 
