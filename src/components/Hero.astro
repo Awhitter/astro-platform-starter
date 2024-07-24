@@ -1,0 +1,17 @@
+---
+const backgroundImage = '/assets/images/hero-background.jpg';
+---
+
+<section class="relative h-screen flex items-center justify-center text-white">
+    <div class="absolute inset-0 z-0">
+        <img src={backgroundImage} alt="Hero background" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+    </div>
+    <div class="relative z-10 text-center">
+        <h1 class="text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
+        <p class="text-2xl mb-8">Discover my projects and articles</p>
+        <a href="#projects" class="bg-white text-black px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors">
+            Explore Projects
+        </a>
+    </div>
+</section>
