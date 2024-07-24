@@ -3,8 +3,6 @@
 
 [[plugins]]
   package = "netlify-plugin-bundle-env"
-  [plugins.inputs]
-    sourceDir = "src"
 
 [[plugins]]
   package = "netlify-plugin-fetch-feeds"
