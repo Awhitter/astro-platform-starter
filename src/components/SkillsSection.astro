@@ -1,0 +1,28 @@
+---
+const skills = [
+    { name: 'HTML5', icon: 'fab fa-html5' },
+    { name: 'CSS3', icon: 'fab fa-css3-alt' },
+    { name: 'JavaScript', icon: 'fab fa-js' },
+    { name: 'React', icon: 'fab fa-react' },
+    { name: 'Node.js', icon: 'fab fa-node-js' },
+    { name: 'Python', icon: 'fab fa-python' },
+    { name: 'Git', icon: 'fab fa-git-alt' },
+    { name: 'Docker', icon: 'fab fa-docker' },
+];
+---
+
+<section id="skills" class="py-20 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-12 text-center">My Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+            {skills.map(skill => (
+                <div class="flex flex-col items-center">
+                    <i class={`${skill.icon} text-5xl mb-4 text-blue-500`}></i>
+                    <span class="text-lg font-semibold">{skill.name}</span>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
