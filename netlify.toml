@@ -2,12 +2,18 @@
   remote_images = ["https://res.cloudinary.com/dq9xmts6p/.*"]
 
 [[plugins]]
-  package = "netlify-plugin-fetch-feeds"
-
+  package = "netlify-plugin-bundle-env"
   [plugins.inputs]
-    dataDir = "src/_data"
+    sourceDir = "src"
 
+[[plugins]]
+  package = "netlify-plugin-fetch-feeds"
+  [plugins.inputs]
+    dataDir = "src/data"
     [[plugins.inputs.feeds]]
       name = "dailydev"
       url = "https://daily.dev/blog/rss.xml"
       ttl = 3600
+
+[build]
+  command = "mkdir -p src/data && npm run build"
